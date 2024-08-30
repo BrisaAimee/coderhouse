@@ -1,0 +1,35 @@
+@media (max-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    h1 {
+      font-size: 24px;
+      width: 100%;
+    }
+  
+    button {
+      font-size: medium;
+      padding: 10px;
+    }
+  
+    .cuidados-content {
+      padding: 10px;
+  
+      article {
+        padding: 15px;
+      }
+    }
+  
+    .call {
+      width: 40%;
+      font-size: medium;
+    }
+  
+    #flor1 {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  }  

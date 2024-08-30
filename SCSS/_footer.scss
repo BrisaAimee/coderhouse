@@ -1,0 +1,19 @@
+footer {
+    background-color: $footer-bg;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: inline;
+        margin: 0 10px;
+      }
+    }
+  }
+  

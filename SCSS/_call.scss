@@ -1,0 +1,15 @@
+.call {
+  background-color: $color-secondary;
+  color: $color-text-dark;
+  padding: $padding-medium;
+  font-size: $font-size-large;
+  border-radius: 7px;
+  border: 1px beige;
+  position: relative;
+  width: 25%;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #8ca02b;
+  }
+}
