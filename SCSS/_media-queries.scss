@@ -1,35 +1,97 @@
-@media (max-width: 1024px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    h1 {
-      font-size: 24px;
-      width: 100%;
-    }
-  
-    button {
-      font-size: medium;
-      padding: 10px;
-    }
-  
-    .cuidados-content {
-      padding: 10px;
-  
-      article {
-        padding: 15px;
+// Media Queries
+@media screen and (max-width: 768px) {
+  // Para pantallas de celular
+
+  header {
+    flex-direction: column;
+    padding: 0 20px;
+
+    ul {
+      justify-content: center;
+      li {
+        padding: $padding-small;
       }
     }
-  
-    .call {
-      width: 40%;
-      font-size: medium;
-    }
-  
-    #flor1 {
-      max-width: 250px;
+  }
+
+  .intro {
+    height: 300px;
+
+    h1 {
+      font-size: 24px;
+      width: 80%;
     }
   }
-  
-  @media (max-width: 768px) {
-  }  
+
+  .call {
+    width: 80%;
+    font-size: $font-size-medium;
+    padding: $padding-small;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .cuidados .cuidados-content {
+    flex-direction: column;
+    padding: 20px 10px;
+
+    article {
+      padding: 30px 20px;
+    }
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  // Para pantallas de computadora
+
+  header {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .intro {
+    height: 400px;
+
+    h1 {
+      font-size: 30px;
+      width: 50%;
+    }
+  }
+
+  .call {
+    width: 25%;
+    font-size: $font-size-large;
+    padding: $padding-medium;
+  }
+
+  .contact-form {
+    padding: 50px 100px;
+  }
+
+  .cuidados .cuidados-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  footer {
+    height: 200px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
