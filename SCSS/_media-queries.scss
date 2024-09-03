@@ -1,97 +1,180 @@
-// Media Queries
-@media screen and (max-width: 768px) {
-  // Para pantallas de celular
+@media (max-width: 580px) {
 
   header {
+    display: flex;
     flex-direction: column;
-    padding: 0 20px;
-
-    ul {
-      justify-content: center;
-      li {
-        padding: $padding-small;
-      }
-    }
-  }
-
-  .intro {
-    height: 300px;
-
-    h1 {
-      font-size: 24px;
-      width: 80%;
-    }
-  }
-
-  .call {
-    width: 80%;
-    font-size: $font-size-medium;
-    padding: $padding-small;
-  }
-
-  .contact-form {
-    padding: 30px 20px;
-  }
-
-  .cuidados .cuidados-content {
-    flex-direction: column;
-    padding: 20px 10px;
-
-    article {
-      padding: 30px 20px;
-    }
-  }
-
-  footer {
-    height: auto;
-    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     text-align: center;
   }
 
-  .gallery {
-    grid-template-columns: 1fr;
+  header img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
   }
-}
 
-@media screen and (min-width: 769px) {
-  // Para pantallas de computadora
+  nav {
+    margin-top: 10px;
+  }
 
-  header {
-    flex-direction: row;
-    padding: 0 50px;
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  main {
+    padding: 10px;
   }
 
   .intro {
-    height: 400px;
-
-    h1 {
-      font-size: 30px;
-      width: 50%;
-    }
-  }
-
-  .call {
-    width: 25%;
-    font-size: $font-size-large;
-    padding: $padding-medium;
-  }
-
-  .contact-form {
-    padding: 50px 100px;
-  }
-
-  .cuidados .cuidados-content {
+    display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
   }
 
-  footer {
-    height: 200px;
-    flex-direction: row;
-    text-align: left;
+  .intro h1 {
+    font-size: 20px;
+    margin: 0;
   }
 
+  .intro button.call {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Artista */
+  #artista {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .artist-intro h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .artist-main img.decorative-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .artist-main #con-btn {
+    padding: 0 10px;
+  }
+
+  .artist-main p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .artist-main a.call {
+    font-size: 16px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* Galería */
   .gallery {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    gap: 10px;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Contacto */
+  .contact-form {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form .form-group {
+    margin-bottom: 10px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #submit-btn {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cuidados */
+  .cuidados-content {
+    padding: 10px;
+  }
+
+  .cuidados-content article {
+    margin-bottom: 20px;
+  }
+
+  .cuidados-content h2 {
+    font-size: 18px;
+  }
+
+  .cuidados-content p {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul li {
+    margin: 5px 0;
+  }
+
+  footer ul li a {
+    font-size: 16px;
+    text-decoration: none;
   }
 }
